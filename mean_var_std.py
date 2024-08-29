@@ -1,6 +1,7 @@
 import numpy as np
 
-def calculate(list):
+def calculate(list1):
+    b = np.reshape(list1, (3,3))
     calculations = {
         "mean": [list(np.mean(b, axis=0)), list(np.mean(b, axis=1)), np.mean(b)],
         "variance": [list(np.var(b, axis=0)), list(np.var(b, axis=1)), np.var(b)],
